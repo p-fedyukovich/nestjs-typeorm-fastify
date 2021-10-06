@@ -82,6 +82,7 @@
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "fastify-request-context": "^2.2.0",
     "husky": "6.0.0",
     "jest": "^27.0.6",
     "jest-junit": "^12.2.0",
@@ -98,6 +99,7 @@
   },
   "peerDependencies": {
     "@nestjs/common": ">=7.0.0",
+    "fastify-request-context": "^2.0.0",
     "reflect-metadata": ">=0.1.12",
     "rxjs": ">=6.0.0",
     "typeorm": ">= 0.2.8"

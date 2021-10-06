@@ -1,0 +1,18 @@
+# source
+.circleci
+lib
+tests
+package-lock.json
+tslint.json
+tsconfig.json
+.prettierrc
+.idea
+.eslintignore
+.eslintrc.js
+.commitlintrc.json
+docker-compose.yaml
+
+# github
+.github
+CONTRIBUTING.md
+renovate.json
