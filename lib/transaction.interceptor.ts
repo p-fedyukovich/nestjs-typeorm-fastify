@@ -20,6 +20,7 @@ import {
   mergeMapTo,
 } from 'rxjs/operators';
 import { deleteEntityManager, setEntityManager } from './typeorm-fastify.utils';
+import { getRequest } from './context.utils';
 
 @Injectable()
 export class TransactionInterceptor implements NestInterceptor {
@@ -44,7 +45,7 @@ export class TransactionInterceptor implements NestInterceptor {
     await queryRunner.connect();
     await queryRunner.startTransaction(options?.isolation);
 
-    const request = context.switchToHttp().getRequest();
+    const request = getRequest(context);
     const store = new Map();
     request.requestContext.set(TYPE_ORM_STORAGE, store);
 
