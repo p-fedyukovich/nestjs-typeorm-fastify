@@ -69,20 +69,20 @@
   "devDependencies": {
     "@commitlint/cli": "12.1.4",
     "@commitlint/config-angular": "12.1.4",
+    "@fastify/request-context": "^3.0.0",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-fastify": "^8.0.0",
     "@nestjs/testing": "^8.0.0",
     "@nestjs/typeorm": "^8.0.0",
     "@types/jest": "^27.0.1",
-    "@types/node": "12.20.15",
+    "@types/node": "16.11.38",
     "@types/sinon": "^10.0.2",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
     "eslint": "^7.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "fastify-request-context": "^2.2.0",
     "husky": "6.0.0",
     "jest": "^27.0.6",
     "jest-junit": "^12.2.0",
@@ -98,8 +98,8 @@
     "uuid": "8.3.2"
   },
   "peerDependencies": {
+    "@fastify/request-context": "^3.0.0",
     "@nestjs/common": ">=7.0.0",
-    "fastify-request-context": "^2.0.0",
     "reflect-metadata": ">=0.1.12",
     "rxjs": ">=6.0.0",
     "typeorm": ">= 0.2.8"

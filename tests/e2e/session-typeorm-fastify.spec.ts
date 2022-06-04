@@ -11,7 +11,7 @@ import {
   NestFastifyApplication,
 } from '@nestjs/platform-fastify';
 import { HttpStatus } from '@nestjs/common';
-import { fastifyRequestContextPlugin } from 'fastify-request-context';
+import { fastifyRequestContextPlugin } from '@fastify/request-context';
 
 describe('TypeOrm session', () => {
   let app: NestFastifyApplication;
