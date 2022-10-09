@@ -1,8 +1,7 @@
 import { Inject } from '@nestjs/common';
 import { EntityManager } from 'typeorm';
 import { getConnectionToken } from '@nestjs/typeorm';
-import { requestContext } from 'fastify-request-context';
-
+import { requestContext } from '@fastify/request-context';
 import {
   Connectable,
   TransactionalOptions,

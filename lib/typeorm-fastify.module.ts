@@ -1,7 +1,7 @@
 import { DynamicModule, Global, Module, OnModuleInit } from '@nestjs/common';
 import { Connection, EntityTarget, QueryRunner, Repository } from 'typeorm';
 import { DiscoveryModule, DiscoveryService } from '@nestjs/core';
-import { requestContext } from 'fastify-request-context';
+import { requestContext } from '@fastify/request-context';
 
 import { getEntityManager, getQueryRunner } from './typeorm-fastify.utils';
 import { TYPE_ORM_STORAGE } from './typeorm-fastify.constants';
